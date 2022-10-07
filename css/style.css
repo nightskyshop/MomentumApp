@@ -30,7 +30,27 @@ body {
     padding-top: 20vh;
     color: white;
     text-align: center;
-    font-size: 8em;
+    font-size: 7.5em;
+}
+
+#login-form {
+    margin-bottom: 1em;
+    margin-top: .75em;
+    text-align: center;
+}
+
+#login-form input {
+    padding: .1em .1em;
+    width: 220px;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1.5em;
+}
+
+#login-form input::placeholder {
+    color: white;
+    background: none;
 }
 
 #greeting {
