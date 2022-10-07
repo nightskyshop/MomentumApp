@@ -27,7 +27,7 @@ body {
 }
 
 #clock {
-    padding-top: 20vh;
+    padding-top: 18vh;
     color: white;
     text-align: center;
     font-size: 7.5em;
@@ -78,21 +78,40 @@ body {
 }
 
 #todo-list {
-    text-align: center;
+    width: 100%;
+    max-width: 220px;
+    max-height: 20vh;
+    margin: 2em auto 0 auto;
+    overflow-y: scroll;
+}
+
+#todo-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+#todo-list::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
 }
 
 #todo-list li {
     color: white;
     margin-top: .5em;
-}
-
-#todo-list li:first-child {
-    color: white;
-    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #todo-list li button {
-    margin-left: 10px;
+    margin-right: 10px;
     background: none;
     border: none;
 }
