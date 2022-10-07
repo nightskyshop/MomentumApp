@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#weather {
+    color : white;
+    position: fixed;
+    top: 1em;
+    right: 2.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+#clock {
+    padding-top: 20vh;
+    color: white;
+    text-align: center;
+    font-size: 8em;
+}
+
+#greeting {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#todo-form {
+    text-align: center;
+}
+
+#todo-form input {
+    margin-top: .5em;
+    padding: .25em .5em;
+    width: 220px;
+    border-bottom: 1px solid white;
+    background: none;
+    color: white;
+    font-size: 1em;
+}
+
+#todo-form input::placeholder {
+    color: white;
+}
+
+#todo-list {
+    text-align: center;
+}
+
+#todo-list li {
+    color: white;
+    margin-top: .5em;
+}
+
+#todo-list li:first-child {
+    color: white;
+    margin-top: 2em;
+}
+
+#todo-list li button {
+    margin-left: 10px;
+    background: none;
+    border: none;
+}
+
+#quote {
+    position: fixed;
+    bottom: 1em;
+    left: 2.5em;
+    color: white;
+}
+
+@media ( max-width: 650px ) {
+    #clock {
+        font-size: 5em;
+    }
+
+    #greeting {
+        font-size: 2em;
+    }
+}
+@media ( max-width: 350px ) {
+    #clock {
+        font-size: 3em;
+    }
+
+    #greeting {
+        font-size: 1em;
+    }
+}
